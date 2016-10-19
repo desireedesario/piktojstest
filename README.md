@@ -9,7 +9,7 @@ _Note: the canvas element type is plain HTML `<div>`, not `<canvas>`_
 
 You will be given a HTML file with simple structure, and a server that allows you to upload and retrieve image. Instruction on how to run the server is included below.
 
-Kindly showcase your best design pattern of JS structure that is easy to understand for team collaboration. You are encouraged to use only pure JavaScript. If your design pattern needed a library, you are allow to do so given a good reason. Try finishing this test in **one day** and send it back to us. If you are not able to finish, do send us whatever you have done, we will evaluate accordingly.
+Kindly showcase your best design pattern of JS structure that is easy to understand for team collaboration. You are encouraged to use only pure JavaScript. If your design pattern needed a library, you are allow to do so given a good reason. Try finishing this test in **one day** and send it back to us. If you are not able to finish, do send us whatever you have done, we will evaluate accordingly.d
 
 **Primary task**
 - app should works as the specification required
@@ -55,4 +55,10 @@ Note that name of the file input has to be `upload` as this is what the server w
 
 
 The server only accepts `png` and `jpeg` file format
-# piktojstest
+
+
+
+- post to images 
+- get to uploads
+- plain javacript XML HTTP requests
+- click handler tht
