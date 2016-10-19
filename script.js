@@ -22,3 +22,15 @@ submit.addEventListener("click", function(e){
     var li = document.createElement("li");
     li.innerHTML = "<img src=\"" + response.file + "\" class=\"img-rounded img-add\" />";
     ul.appendChild(li);
+
+    // re-initialize draggable for newly added elements to DOM
+    $(".img-add").draggable({ revert: "invalid" });
+      // return true;
+  } else {
+    console.log(newRequest.responseText);
+    // return false;
+    }
+  };
+
+  newRequest.send(Data);
+}, false);
