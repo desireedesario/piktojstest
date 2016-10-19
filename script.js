@@ -7,6 +7,18 @@ submit.addEventListener("click", function(e){
   var file = document.getElementById("upload").files[0];
   uploadInput.append("upload", file);
 
-  //post a new XMLHTTPRequest
-  
-})
+  //post new XMLHttpRequest
+  var newRequest = new XMLHttpRequest();
+
+  // set AJAX method & URL
+  newRequest.open("post", "/uploads", true);
+
+  newRequest.onreadystatechange = function() {
+    if(newRequest.readyState == 4 && newRequest.status == 200) {
+      var response = JSON.parse(newRequest.responseText);
+
+    // append new uploaded image into listImages
+    var ul = document.getElementById("listImages");
+    var li = document.createElement("li");
+    li.innerHTML = "<img src=\"" + response.file + "\" class=\"img-rounded img-add\" />";
+    ul.appendChild(li);
